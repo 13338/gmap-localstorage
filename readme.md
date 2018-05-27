@@ -14,3 +14,6 @@ A map with the ability to create, edit, delete a marker and its description
 git clone https://github.com/13338/lblog.git
 ```
 Replace the `YOUR_API_KEY` (index.html) with your own api key
+
+## preview
+![preview](preview.png "Preview")
