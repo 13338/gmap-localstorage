@@ -13,7 +13,8 @@ A map with the ability to create, edit, delete a marker and its description
 ```bash
 git clone https://github.com/13338/lblog.git
 ```
-Replace the `YOUR_API_KEY` (index.html) with your own api key
+Replace the `https://maps.googleapis.com/maps/api/js?callback&callback=initMap` (index.html)
+with your own api key `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback&callback=initMap`
 
 ## preview
 ![preview](preview.png "Preview")
