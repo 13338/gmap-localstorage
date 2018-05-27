@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body, #map {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      /* The Modal (background) */
+      .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content/Box */
+      .modal-content {
+          background-color: #fefefe;
+          margin: 15% auto; /* 15% from the top and centered */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 300px; /* Could be more or less, depending on screen size */
+      }
+
+      /* The Close Button */
+      .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Edit Marker</h1>
+    <div id="edit">
+      <div style="margin-bottom: 10px">
+        <input id="description" type="text" placeholder="Description">
+        <input id="markerId" type="hidden" value="null">
+      </div>
+      <div style="margin-bottom: 10px">
+        <select name="" id="markerColor">
+          <option value="red">red</option>
+          <option value="black">black</option>
+          <option value="grey">grey</option>
+          <option value="orange">orange</option>
+          <option value="white">white</option>
+          <option value="yellow">yellow</option>
+          <option value="purple">purple</option>
+          <option value="green">green</option>
+        </select>
+      </div>
+      <div style="margin-bottom: 10px">
+        <button id="saveButton">Save</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <div id="map"></div>
+    
+    <script src="gmap-localstorage.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback&callback=initMap"></script>
+  </body>
+</html>
